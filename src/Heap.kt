@@ -9,16 +9,16 @@ import kotlin.collections.ArrayList
 fun main(){
     var array = arrayListOf(1, 12, 3, 4, 1, 6, 8, 7)
     val priorityQueue = ComparableHeapImpl.create(array)
-//    while (!priorityQueue.isEmpty){
-//        println(priorityQueue.remove())
-//    }
+    while (!priorityQueue.isEmpty){
+        println(priorityQueue.remove())
+    }
 
     //min heap
-    val inverseComparator = Comparator<Int> { o1, o2 -> o2.compareTo(o1) }
-    val minHeap = ComparatorHeapImpl.create(array, inverseComparator)
-    while (!minHeap.isEmpty){
-        println(minHeap.remove())
-    }
+//    val inverseComparator = Comparator<Int> { o1, o2 -> o2.compareTo(o1) }
+//    val minHeap = ComparatorHeapImpl.create(array, inverseComparator)
+//    while (!minHeap.isEmpty){
+//        println(minHeap.remove())
+//    }
 }
 
 
